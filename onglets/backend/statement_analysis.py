@@ -62,6 +62,17 @@ def _fmt_amount(x, unit="KEUR"):
         return f"{x/1_000_000.0:,.3f} G€"
     return f"{x:,.0f} k€"
 
+# def _unit_factor_from_KEUR(unit: str) -> float:
+#     if unit == "KEUR":
+#         return 1.0
+#     if unit == "EUR":
+#         return 1000.0
+#     if unit == "MEUR":
+#         return 1.0 / 1000.0
+#     if unit == "GEUR":
+#         return 1.0 / 1_000_000.0
+#     return 1.0
+
 
 def _fmt_pct(x):
     try:

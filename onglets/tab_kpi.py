@@ -424,7 +424,7 @@ def render_tab2_kpi():
     
     st.markdown("##### Unité d'affichage")
     c1, c2, c3 = st.columns(3)
-    unit = c1.selectbox("", ["KEUR","EUR"], label_visibility="collapsed")
+    unit = c1.selectbox("", ["KEUR","EUR", "MEUR", "GEUR"], label_visibility="collapsed")
     # ==========================================================
     # A) KPI Bilan (PMT)
     # ==========================================================
